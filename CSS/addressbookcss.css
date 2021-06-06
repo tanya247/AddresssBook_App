@@ -178,6 +178,10 @@ label{
     display: flex;
     flex-direction: row-reverse;
 }
+#addlink{
+    text-decoration : none;
+    color: #42515f;
+}
 
 .button{
     height: 100%;

@@ -24,7 +24,9 @@
         <form class="form" action="#" onsubmit="save()" onreset="resetForm()">
             <div class="form-head">
                 Person Address Form
-                <img src="/Assets/cancel_black_24dp.svg" width="35" height="35">
+                <a href="home.html">
+                    <img src="/Assets/cancel_black_24dp.svg" width="35" height="35">
+                </a>
             </div>
             <div class="form-row">
                 <label class="label text" for="name">Full Name</label>
@@ -33,7 +35,8 @@
             </div>
             <div class="form-row">
                 <label class="label text" for="name">Mobile Number</label>
-                <input class="input" type="number" id="mobile" name="mobile" placeholder="Your mobile number.." required>
+                <input class="input" type="number" id="mobile" name="mobile" placeholder="Your mobile number.."
+                    required>
                 <error-output class="error-mobile-output" for="number"></error-output>
             </div>
             <div class="form-row">
@@ -108,13 +111,21 @@
             </div>
             <div class="button-content">
                 <button type="reset" class="resetButton button">Reset</button>
-                    <button type="submit" class="button submitButton"  id="submitButton">Add</button>  
+
+                <button type="submit" class="button submitButton" id="submitButton">
+                    <a id = "addlink" href="home.html">
+                        Add
+                    </a>
+                </button>
+
             </div>
         </form>
-    </div>>    
-    
- 
+    </div>>
+
+
+
 </body>
 <script src="/JS/AddressBook.js"></script>
 <script src="../JS/contact.js"></script>
+
 </html>
