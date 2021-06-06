@@ -152,7 +152,6 @@ label{
     resize: vertical;
 
 }
-
 .error-text-output{
     margin-left: 12px;
     color: red;
@@ -160,7 +159,20 @@ label{
     font: italic;
     opacity: 0.6;
 }
-
+.error-mobile-output{
+    margin-left: 12px;
+    color: red;
+    font-size: 14px;
+    font: italic;
+    opacity: 0.6;
+}
+.error-zip-output{
+    margin-left: 20px;
+    color: red;
+    font-size: 14px;
+    font: italic;
+    opacity: 0.6;
+}
 .button-content{
     margin-top: 5%;
     display: flex;
