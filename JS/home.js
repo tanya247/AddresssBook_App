@@ -45,7 +45,7 @@ const createInnerHtml = () => {
      <td>${addressBookData._phoneNo}</td>
      <td>
      <img id="${addressBookData.id}" onclick="remove(this)" alt="delete"
-     src="../Assets/delete-black-18dp.svg">
+     src="../Assets/delete-black-18dp.svg" width = "25">
      <img id="${addressBookData.id}" alt="edit" onclick="update(this)"
      src="../Assets/outline_edit_black_24dp.png">
      </td>
@@ -67,7 +67,7 @@ const remove = (node) => {
     createInnerHtml();
     window.location.replace(site_properties.home_page);
     } else {
-        const deleteURl = site_properties.server_url + addressBookList.id.toString();
+        const deleteURl = site_properties.server_url + addressBookData.id.toString();
         makeServiceCall("DELETE", deleteURl, false)
             .then(responseText => {
                 createInnerHtml();
